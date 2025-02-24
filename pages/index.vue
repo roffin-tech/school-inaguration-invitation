@@ -1,71 +1,73 @@
 <template>
   <div class="invitation-container">
     <header>
-      <h1>🎓 St. Joseph’s High School, Kulathoor 🎓</h1>
-      <p class="header-subtitle">(Managed by Little Flower Church, Kulathoor)</p>
+      <h1 class="fade-slide-in">🎓 St. Joseph’s High School, Kulathoor 🎓</h1>
+      <p class="header-subtitle fade-in">(Managed by Little Flower Church, Kulathoor)</p>
     </header>
 
-    <section class="guest-name-section">
+    <section class="guest-name-section bounce-in">
       <h2>{{ sitation }}</h2>
-      <div class="guest-name-placeholder">{{ guestName }}</div>
+      <div class="guest-name-placeholder pulse">{{ guestName }}</div>
     </section>
 
     <section class="invitation">
-      <h2>🌟 INVITATION 🌟</h2>
-      <p class="intro">A Landmark in Education & Community Growth</p>
-      <p>
-        It is with great joy and gratitude that we invite you to the inauguration of the newly constructed building of St. Joseph’s High School, Kulathoor.
-      </p>
-      <p>
-        For five decades, our institution has been a beacon of education, fostering young minds and contributing to the community's growth. Under the guidance of Little Flower Church, Kulathoor, our school has continually strived for academic excellence and cultural enrichment.
-      </p>
-      <p>
-        This new infrastructure marks a significant milestone in our journey, strengthening our commitment to holistic education.
-      </p>
+      <h2 class="zoom-in">🌟 INVITATION 🌟</h2>
+      <p class="intro slide-in-left">A Landmark in Education & Community Growth</p>
+      <p class="fade-in">It is with great joy and gratitude that we invite you to the inauguration of the newly
+        constructed building of St. Joseph’s High School, Kulathoor.</p>
+      <p class="fade-in">For five decades, our institution has been a beacon of education, fostering young minds and
+        contributing to the community's growth. Under the guidance of Little Flower Church, Kulathoor, our school has
+        continually strived for academic excellence and cultural enrichment.</p>
+      <p class="fade-in">This new infrastructure marks a significant milestone in our journey, strengthening our
+        commitment to holistic education.</p>
 
-      <div class="guest-section">
+      <div class="guest-section slide-in-right">
         <h3>🎤 Chief Guest</h3>
-        <p><strong>Mr. Anto Antony</strong>, Member of Parliament</p>
+        <p>
+          <strong>Mr. Anto Antony</strong>, 
+                    Member of Parliament
+        </p>
 
         <h3>🎖️ Guests of Honour</h3>
         <ul>
-          <li>Very Rev. Bishop Mar Thomas Tharayil</li>
-          <li>Advocate Pramod Narayanan, MLA</li>
-          <li>Mr. Raju Abraham, Ex-MLA</li>
+          <li><strong>Very Rev. Bishop Mar Thomas Tharayil</strong></li>
+          <li><strong>Adv. Pramod Narayanan</strong>, MLA</li>
+          <li><strong>Mr. Raju Abraham</strong>, Ex-MLA</li>
         </ul>
       </div>
 
       <div class="event-location-container">
-        <div class="event-details">
+        <div class="event-details fade-in">
           <h3>📅 Event Details</h3>
           <p><strong>Date:</strong> 27th February 2025</p>
           <p><strong>Time:</strong> 2:45 PM</p>
           <p><strong>Venue:</strong> Parish Hall, Little Flower Church, Kulathoor</p>
         </div>
 
-        <div class="qr-container">
-          <h3>📍 Location QR Code</h3>
+        <div class="qr-container zoom-in">
+          <h3>📍 SCAN TO REACH US</h3>
           <img src="/assets/location.png" alt="Location QR Code" class="qr-image" />
         </div>
       </div>
 
-      <p class="closing-message">
-        Join us in this moment of celebration! Your presence and blessings will be a great encouragement to us as we continue our mission of shaping young minds. We also express our heartfelt gratitude for your invaluable support in making this new building a reality.
+      <p class="closing-message slide-in-up">Join us in this moment of celebration! Your presence and blessings will be
+        a great encouragement to us as we continue our mission of shaping young minds. We also express our heartfelt
+        gratitude for your invaluable support in making this new building a reality.</p>
+
+      <p class="fade-in">Looking forward to welcoming you to this special occasion!</p>
+
+      <p class="signature fade-in">With warm regards,<br />
+        <strong>Fr. Jacob Naduvilekkalam</strong><br />
+        Manager, St. Joseph’s High School, Kulathoor
       </p>
 
-      <p>Looking forward to welcoming you to this special occasion!</p>
+      <h3 class="vision-header bounce-in">🌟 A Vision for the Future 🌟</h3>
+      <p class="fade-in">Our school remains committed to fostering academic excellence, moral integrity, and holistic
+        development. With modern facilities, enhanced learning environments, and a spirit of service, we aim to continue
+        empowering students to excel in all aspects of life.</p>
+      <p class="motto pulse">🌿 Education Rooted in Values, Growing Towards Excellence</p>
 
-      <p class="signature">With warm regards,<br />
-      <strong>Fr. Jacob Naduvilekkalam</strong><br />
-      Manager, St. Joseph’s High School, Kulathoor</p>
-
-      <h3 class="vision-header">🌟 A Vision for the Future 🌟</h3>
-      <p>
-        Our school remains committed to fostering academic excellence, moral integrity, and holistic development. With modern facilities, enhanced learning environments, and a spirit of service, we aim to continue empowering students to excel in all aspects of life.
-      </p>
-      <p class="motto">🌿 Education Rooted in Values, Growing Towards Excellence</p>
-
-      <div class="image-container">
+      <div class="image-container zoom-in">
         <img src="/assets/background.jpg" alt="School Building" class="school-image" />
       </div>
     </section>
@@ -90,6 +92,75 @@ export default {
 </script>
 
 <style scoped>
+
+/* New Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1.5s ease-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 1.5s ease-out;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+
 .invitation-container {
   font-family: 'Inter', sans-serif;
   line-height: 1.8;
@@ -189,7 +260,7 @@ ul li {
 @media (min-width: 768px) {
   .event-location-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -219,14 +290,29 @@ ul li {
   font-size: 1.2rem;
 }
 
-.image-container, .qr-container {
+.image-container {
   text-align: center;
   margin-top: 2rem;
+}
+
+.qr-container {
+  text-align: center;
+
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .school-image, .qr-image {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+  .qr-image {
+    max-width: 200px;
+  }
 }
 </style>
