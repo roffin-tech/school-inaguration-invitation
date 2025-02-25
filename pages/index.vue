@@ -12,6 +12,9 @@
 
     <section class="invitation">
       <h2 class="zoom-in">🌟 INVITATION 🌟</h2>
+      <div class="image-container zoom-in">
+        <img src="/assets/background.jpeg" alt="School Building" class="school-image" />
+      </div>
       <p class="intro slide-in-left">A Landmark in Education & Community Growth</p>
       <p class="fade-in">It is with great joy and gratitude that we invite you to the inauguration of the newly
         constructed building of St. Joseph’s High School, Kulathoor.</p>
@@ -24,8 +27,8 @@
       <div class="guest-section slide-in-right">
         <h3>🎤 Chief Guest</h3>
         <p>
-          <strong>Mr. Anto Antony</strong>, 
-                    Member of Parliament
+          <strong>Mr. Anto Antony</strong>,
+          Member of Parliament
         </p>
 
         <h3>🎖️ Guests of Honour</h3>
@@ -66,10 +69,6 @@
         development. With modern facilities, enhanced learning environments, and a spirit of service, we aim to continue
         empowering students to excel in all aspects of life.</p>
       <p class="motto pulse">🌿 Education Rooted in Values, Growing Towards Excellence</p>
-
-      <div class="image-container zoom-in">
-        <img src="/assets/background.jpg" alt="School Building" class="school-image" />
-      </div>
     </section>
   </div>
 </template>
