@@ -33,7 +33,7 @@
 
         <h3>🎖️ Guests of Honour</h3>
         <ul>
-          <li><strong>Very Rev. Bishop Mar Thomas Tharayil</strong></li>
+          <li><strong>His Highness Mar Thomas Tharayil</strong></li>
           <li><strong>Adv. Pramod Narayanan</strong>, MLA</li>
           <li><strong>Mr. Raju Abraham</strong>, Ex-MLA</li>
         </ul>
