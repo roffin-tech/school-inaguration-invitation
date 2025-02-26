@@ -16,12 +16,12 @@
         <img src="/assets/background.jpeg" alt="School Building" class="school-image" />
       </div>
       <p class="intro slide-in-left">A Landmark in Education & Community Growth</p>
-      <p class="fade-in">It is with great joy and gratitude that we invite you to the inauguration of the newly
+      <p class="fade-in invitation-paragraph">It is with great joy and gratitude that we invite you to the inauguration of the newly
         constructed building of St. Joseph’s High School, Kulathoor.</p>
-      <p class="fade-in">For five decades, our institution has been a beacon of education, fostering young minds and
+      <p class="fade-in invitation-paragraph">For five decades, our institution has been a beacon of education, fostering young minds and
         contributing to the community's growth. Under the guidance of Little Flower Church, Kulathoor, our school has
         continually strived for academic excellence and cultural enrichment.</p>
-      <p class="fade-in">This new infrastructure marks a significant milestone in our journey, strengthening our
+      <p class="fade-in invitation-paragraph">This new infrastructure marks a significant milestone in our journey, strengthening our
         commitment to holistic education.</p>
 
       <div class="guest-section slide-in-right">
@@ -44,7 +44,7 @@
           <h3>📅 Blessing Ceremony</h3>
           <p><strong>Date:</strong> 27th February 2025</p>
           <p><strong>Time:</strong> 08:00 AM</p>
-          <p><strong>Celebrant:</strong> His Grace Mar Joseph Perumthottam</p>
+          <p><strong>Celebrant:</strong> <span>His Grace Mar Joseph Perumthottam</span></p>
           <p><strong>Venue:</strong> St. Joseph's High School, Kulathoor</p>
         </div>
 
@@ -184,6 +184,11 @@
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .invitation-paragraph {
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   @keyframes fadeIn {
