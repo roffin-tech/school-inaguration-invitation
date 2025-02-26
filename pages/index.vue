@@ -6,7 +6,8 @@
     </header>
 
     <section class="guest-name-section bounce-in">
-      <h2>{{ sitation }} {{ guestName }},</h2>
+      <h2>{{ sitation }}</h2>
+      <div class="guest-name-placeholder pulse">{{ guestName }}</div>
     </section>
 
     <section class="invitation">
