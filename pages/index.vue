@@ -44,6 +44,7 @@
           <h3>📅 Blessing Ceremony</h3>
           <p><strong>Date:</strong> 27th February 2025</p>
           <p><strong>Time:</strong> 08:00 AM</p>
+          <p><strong>Celebrant:</strong> His Grace Mar Joseph Perumthottam</p>
           <p><strong>Venue:</strong> St. Joseph's High School, Kulathoor</p>
         </div>
 
