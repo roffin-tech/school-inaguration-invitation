@@ -6,8 +6,7 @@
     </header>
 
     <section class="guest-name-section bounce-in">
-      <h2>{{ sitation }}</h2>
-      <div class="guest-name-placeholder pulse">{{ guestName }}</div>
+      <h2>{{ sitation }} {{ guestName }},</h2>
     </section>
 
     <section class="invitation">
@@ -55,7 +54,7 @@
           <p><strong>Venue:</strong> Parish Hall, Little Flower Church, Kulathoor</p>
         </div>
 
-        <div class="qr-container zoom-in">
+        <div class="qr-container zoom-in" @click="locateUs()">
           <h3>📍 SCAN TO REACH US</h3>
           <img src="/assets/location.png" alt="Location QR Code" class="qr-image" />
         </div>
@@ -94,6 +93,11 @@
       const urlParams = new URLSearchParams(window.location.search);
       this.guestName = urlParams.get('n') || 'Guest Name';
       this.sitation = urlParams.get('s') || 'Dear';
+    },
+    methods: {
+      locateUs() {
+        window.location.href = 'https://maps.app.goo.gl/AJTwJcBQKtDZf8UA7';
+      }
     }
   }
 </script>
