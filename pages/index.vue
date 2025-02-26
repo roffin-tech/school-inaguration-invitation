@@ -55,7 +55,7 @@
         </div>
 
         <div class="qr-container zoom-in" @click="locateUs()">
-          <h3>📍 SCAN TO REACH US</h3>
+          <h3>📍 TAP OR SCAN TO REACH US</h3>
           <img src="/assets/location.png" alt="Location QR Code" class="qr-image" />
         </div>
       </div>
@@ -310,6 +310,7 @@
 
   .qr-container {
     text-align: center;
+    cursor: pointer;
 
     h3 {
       margin-top: 1rem;
